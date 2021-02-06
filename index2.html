@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Court House</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="styles2.css">
+ 
+</head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="woman" src="Woman.png" alt="Woman">
+                    <button type="button" id="Hibutton" class="text-typing btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        
+                        <b class="typetext">Hi There!</b>
+                      </button>
+                      <img class="birds" src="Birds.gif" alt="Birds">
+                      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h2 class="modal-title" id="exampleModalLabel">Welcome to The Court House!</h2>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <p style="text-align: center;">If democracy is religion, the Constitution is the Gita and Bible of sovereign India.</p>
+                                <p>The Republic of India is not only the largest democracy in the history of humankind, it is also a dynamic, evolving entity. </p>
+                                <br>
+                                    <p>Want to know more about The History Of Constitution Of India click Next button or Skip.</p>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Skip</button>
+                              <button type="button" class="btn btn-primary button1" data-target="#myModal2" data-toggle="modal" class="historyCOI" style="cursor:pointer;">Next</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--Modal2-->
+                      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h2 class="modal-title" id="exampleModalLabel">History of Indian Constitution</h2>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <p style="text-align: center;">The history of the Constitution of India is very insightful as it explains exactly how it came into being. It also explains why India chose the Parliamentary form of democracy in its modern form.
+
+                                    The British came to India in the 17th century initially for trading only. Eventually, after slowly gaining more power, they attained the rights to collect revenue and govern themselves. In order to do this, they enacted various laws, rules and regulations.
+                                    
+                                    According to the Charter Act of 1833, the Governor General of Bengal became the Governor General of India. It also created a Central Legislature, which, in a way, made the British supreme rulers of India.
+                                    
+                                    The rule of the Company itself finally ended with the Government of India Act in 1858. As a result, the British Crown became ruler of India and administered the country through its government.
+                                    
+                                    The Indian Councils Acts of 1861, 1892 and 1909 started giving representation to Indians in the Viceroy’s councils. They also restored legislative powers back to some provinces. In other words, they adopted decentralization of powers between the Centre and the provinces.</p>
+                                <p><b>The Government of India Act, 1919</b>
+                                    According to this Act, legislative councils came into existence in all provinces of the government. In other words, the British adopted a bicameral structure with separate central and provincial governments. This was also the first time when people could elect their own representatives through direct elections. The Constitution later adopted this quasi-federal and bicameral structure. </p>
+            
+                                <p><b>The Government of India Act, 1935</b>
+                                        The enactment of this law is one of the most important events in the history of the Constitution. Firstly, this law divided powers of governance into a Federal List, a Provincial List and a Concurrent List. Even the Indian Constitution adopted such division of powers between the Central and state governments.
+                                        
+                                        Secondly, this Act granted more autonomy of self-governance to the provinces. It even established the Federal Court, which we now refer to as the Supreme Court of India.<p>
+                                <p><b>The Indian Independence Act of 1947</b>
+                                    This Act marks the final step in the departure of the British from India. India became a truly independent and sovereign state after this Act. The Act established governments at the central and provincial levels. It also laid down the foundation of the Constituent Assembly.</p>
+                                <p><b>Constituent Assembly</b>
+                                    Members of the provisional assemblies indirectly elected members of the Constituent Assembly. This assembly served as the first ‘Parliament’ of independent India and first met on 9 December 1946 in Delhi. After Independence, the Assembly elected Dr Rajendra Prasad as its Chairman and began drafting the Constitution.
+                                    
+                                    Dr Ambedkar became the head of the Drafting Committee. This is why he is called the Father of the Constitution. After more than two years of deliberations, the Assembly finally approved the Constitution on 26 November 1949. This is why we celebrate this day as Constitution Day today.
+                                    
+                                    The Assembly finally adopted the Constitution on <strong>26 January 1950</strong>. India formally became a sovereign republic that day. This is why we celebrate 26 January as India’s Republic Day.</p>
+
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary button2" data-dismiss="modal">Skip</button>
+                            </div>
+                          </div> 
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+ 
+    </body>
+    <script type=text/javascript>
+    $(function(){
+        $(".button1").onclick(function(){
+            $("#myModal1").modal('hide');
+            $("#myModal2").modal('show');
+            return false;
+        });
+        $(".button2").onclick(function(){
+            $("#myModal2").modal('hide');
+            $("#myModal1").modal('show');
+            return false;
+        });
+    });
+    $(document).ready(function() {
+  setTimeout(function() {
+    $("#Hibutton").show();
+  }, 3000);
+});
+    </script>
+
+</html>
